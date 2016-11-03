@@ -1,3 +1,5 @@
+# python2.7
+
 import socket
 
 servidor = "127.0.0.1" # La IP a conectarse
