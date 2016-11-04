@@ -4,14 +4,14 @@ import socket
 import threading
 
 def conexiones(socket_cliente):
-    peticion = socket_cliente.recv(1024) # Nos permite recibir informacion que el cliente envia
+    peticion = socket_cliente.recv(1024)
     print "[*] Mensaje recibido: %s" % peticion
     socket_cliente.send("HOLA CLIENTE")
     socket_cliente.close()
 
 ip = "0.0.0.0"
 puerto = 5555
-max_conexiones = 5 # Numero maximo de conexiones simultaneas
+max_conexiones = 5
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 servidor.bind((ip, puerto))
