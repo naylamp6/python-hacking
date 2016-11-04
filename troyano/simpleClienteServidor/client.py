@@ -3,8 +3,8 @@
 
 import socket
 
-servidor = "127.0.0.1" # La IP a conectarse
-puerto = 5555 # El mismo puerto que el servidor, obviamente
+servidor = "127.0.0.1"
+puerto = 5555
 
 cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 cliente.connect((servidor, puerto))
